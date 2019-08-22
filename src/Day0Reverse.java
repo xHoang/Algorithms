@@ -1,8 +1,12 @@
 public class Day0Reverse {
-
+/*
+* https://algodaily.com/challenges/reverse-a-string
+*
+*
+ */
     public static void main(String args[]) {
-        Day0Reverse test = new Day0Reverse();
-        test.doSomething(); // Pog
+
+    System.out.println(reverseString("abcd"));
 
     }
 
@@ -10,7 +14,13 @@ public class Day0Reverse {
 
     }
 
-    public static void doSomething() {
-        System.out.println("XDddd");
+    public static String reverseString(String str) {
+        StringBuilder strBuild = new StringBuilder(str);
+        String temp = "";
+        for(int i = str.length() - 1; i >= 0; i--){
+            temp = temp + Character.toString(strBuild.charAt(i));
+        }
+
+        return temp;
     }
 }
