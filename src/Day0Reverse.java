@@ -10,10 +10,6 @@ public class Day0Reverse {
 
     }
 
-    public Day0Reverse(){
-
-    }
-
     public static String reverseString(String str) {
         StringBuilder strBuild = new StringBuilder(str);
         String temp = "";
